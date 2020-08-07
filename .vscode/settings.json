@@ -1,0 +1,22 @@
+{
+    "python.pythonPath": "venv\\Scripts\\python.exe",
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.paste&indent_lines",
+            "interval": 30,
+            "sequence": [
+                "pasteAndIndent.action",
+                "cursorEnd"
+            ]
+        },
+        {
+            "command": "multiCommand.copy&select_line",
+            // "interval": 30,
+            "sequence": [
+                "cursorEnd",
+                "cursorHomeSelect",
+                "editor.action.clipboardCopyAction"
+            ]
+        }
+    ]
+}
